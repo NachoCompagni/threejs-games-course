@@ -20,6 +20,18 @@
 <body>
   <script>
     //Place your code here
+    const npcs = [];
+
+    npcs.push(createNPC());
+    npcs.push(createNPC());
+    npcs.push(createNPC());
+    
+    function createNPC(){
+      const power = Match.random()* 0.5 + 0.5;
+      const weapons = ["sword", "pistol", "axe", "spear"];
+      const weapon = weapons[Match.floor(Mach.random()* weapons.length)];
+      const stength = Match.random()* 2 + 1.0;
+    }
   </script> 
 </body>
 
