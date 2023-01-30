@@ -21,9 +21,11 @@
   <script>
     const npcs = [];
     
-    npcs.push(createNPC());
-    npcs.push(createNPC());
-    npcs.push(createNPC());
+    for(x = 0, x <= 3 , x++){
+      npcs.push(createNPC());
+    }
+    
+
     
     function createNPC(){
       const weapons = ["sword", "pistol", "axe", "spear"];
