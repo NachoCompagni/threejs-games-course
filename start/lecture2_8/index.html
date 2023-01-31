@@ -37,6 +37,13 @@
           this.width = width;
           this.height = height;
         }
+        get area(){
+          return this.width * this.height;
+        }
+        move(dx, dy){
+          this.left += dx;
+          this.top += dy;
+        }
       }
 
       const rect1 = new Rectangle(10, 10, 100, 50);
